@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Stopwatch using HTML CSS and JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+    <div id="alert-danger"
+        class="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 hidden"
+        role="alert">
+        <div>
+            <span class="font-medium">Danger alert!</span> Es wurde zurückgesetzt.
+        </div>
+    </div>
+
+    <div id="alert-info"
+        class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400 hidden"
+        role="alert">
+        <div>
+            <span class="font-medium">Info alert!</span> Es wurde gestoppt.
+        </div>
+    </div>
+    <div class="space-y-4 w-full px-4">
+        <a href="#"
+            class="block max-w-md md:max-w-2xl p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
+            <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Click start to start the
+                Stopwatch</h1>
+        </a>
+
+
+
+        <div
+            class="max-w-md md:max-w-2xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg"
+                    src="https://kindergartenebung2.s3.eu-central-1.amazonaws.com/male-hand-holding-a-stopwatch-on-white-background-2023-11-27-05-17-53-utc.jpeg"
+                    alt="Stoppuhr in Hand" />
+            </a>
+            <div class="p-5">
+                <div id="time" class="text-black text-6xl">
+                    <span class="digit" id="hr">00</span>:<span class="txt">Hr</span>
+                    <span class="digit" id="min">00</span>:<span class="txt">Min</span>
+                    <span class="digit" id="sec">00</span>:<span class="txt">Sec</span>
+                    <span class="digit" id="count">00</span>
+                </div>
+                <div id="buttons" class="mt-8 space-x-4">
+                    <button class="btn bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                        id="start">Start</button>
+                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+                        id="stop">Stop</button>
+                    <button class="btn bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                        id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
